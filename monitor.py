@@ -131,8 +131,7 @@ def take_screenshot(page, timestamp: str) -> str:
     filepath = SCREENSHOTS_DIR / filename
     
     # Ta full-page screenshot
-    page.screenshot(path=str(filepath), full_page=False)  # Bara viewport
-    
+    page.screenshot(path=str(filepath), full_page=True)    
     return filename
 
 
