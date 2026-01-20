@@ -126,12 +126,38 @@ def find_headline(element) -> str | None:
 
 
 def take_screenshot(page, timestamp: str) -> str:
-    """Ta screenshot och returnera filnamn."""
+    """Ta screenshot efter att ha scrollat igenom sidan för att ladda allt."""
     filename = f"nyt_{timestamp}.png"
     filepath = SCREENSHOTS_DIR / filename
     
+    # Scrolla genom hela sidan för att trigga lazy loading
+    page.evaluate("""
+        async () => {
+            await new Promise((resolve) => {
+                let totalHeight = 0;
+                const distance = 800;
+                const timer = setInterval(() => {
+                    window.scrollBy(0, distance);
+                    totalHeight += distance;
+                    if (totalHeight >= document.body.scrollHeight) {
+                        clearInterval(timer);
+                        resolve();
+                    }
+                }, 200);
+            });
+        }
+    """)
+    
+    # Vänta på att bilder laddas
+    page.wait_for_timeout(3000)
+    
+    # Scrolla tillbaka till toppen
+    page.evaluate("window.scrollTo(0, 0)")
+    page.wait_for_timeout(500)
+    
     # Ta full-page screenshot
-    page.screenshot(path=str(filepath), full_page=True)    
+    page.screenshot(path=str(filepath), full_page=True)
+    
     return filename
 
 
