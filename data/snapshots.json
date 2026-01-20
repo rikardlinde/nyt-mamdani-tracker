@@ -1,0 +1,12 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2026-01-20T17:32:21.367715+00:00",
+      "found": false,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.nytimes.com/\nCall log:\n  - navigating to \"https://www.nytimes.com/\", waiting until \"networkidle\"\n"
+    }
+  ],
+  "metadata": {
+    "created": "2026-01-20T17:32:22.653798+00:00"
+  }
+}
