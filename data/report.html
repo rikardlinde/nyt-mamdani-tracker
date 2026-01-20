@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT Mamdani Tracker - Rapport</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --muted: #666;
+            --border: #e0e0e0;
+            --accent: #1a73e8;
+            --highlight: #fff3cd;
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+        
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        .article {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-headline {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .article-headline a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        
+        .article-headline a:hover {
+            color: var(--accent);
+        }
+        
+        .article-meta {
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+        
+        .day-section {
+            margin-bottom: 2rem;
+        }
+        
+        .day-header {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--muted);
+        }
+        
+        .snapshot {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .snapshot.has-mentions {
+            border-left: 4px solid var(--accent);
+        }
+        
+        .snapshot-time {
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+        
+        .screenshot-link {
+            font-size: 0.875rem;
+            margin-left: 1rem;
+        }
+        
+        .mention {
+            background: var(--highlight);
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <h1>NYT Mamdani Tracker</h1>
+    <p class="subtitle">Övervakning av omnämnanden av Mamdani på nytimes.com</p>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Kontroller</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Med omnämnanden</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Unika artiklar</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Dagar</div>
+        </div>
+    </div>
+    
+    <h2>Unika artiklar</h2>
+
+    <div class="article">
+        <div class="article-headline"><a href="https://www.nytimes.com/2026/01/20/nyregion/mamdani-hochul-taxes-child-care.html" target="_blank">As Mamdani Focuses on Child Care, Plan to Tax the Rich Is Put Aside</a></div>
+        <div class="article-meta">
+            Först sedd: 2026-01-20 18:25 · 
+            Sektion: programming-node
+        </div>
+    </div>
+
+    <h2>Alla kontroller</h2>
+
+    <div class="day-section">
+        <div class="day-header">2026-01-20 (1 kontroller, 5 omnämnanden)</div>
+
+        <div class="snapshot has-mentions">
+            <span class="snapshot-time">18:25 UTC</span>
+            <a href="screenshots/nyt_20260120_182544.png" class="screenshot-link" target="_blank">📷 Screenshot</a>
+            <strong> — 5 omnämnanden</strong>
+
+            <div class="mention">
+                {"@context":"https://schema.org","@type":"WebSite","image":[{"@context":"https:/
+                <br><small>Sektion: unknown</small>
+            </div>
+
+            <div class="mention">
+                Mamdani Administration
+                <br><small>Sektion: programming-node</small>
+            </div>
+
+            <div class="mention">
+                As Mamdani Focuses on Child Care, Plan to Tax the Rich Is Put Aside
+                <br><small>Sektion: programming-node</small>
+            </div>
+
+            <div class="mention">
+                Mayor Zohran Mamdani of New York campaigned on a proposal to increase taxes on t
+                <br><small>Sektion: programming-node</small>
+            </div>
+
+            <div class="mention">
+                window.__preloadedData = {"initialData":{"data":{"fdrPackage":{"__typename":"Pro
+                <br><small>Sektion: unknown</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        Rapport genererad: 2026-01-20 18:25 · 
+        Data: <a href="snapshots.json">snapshots.json</a>
+    </footer>
+</body>
+</html>
