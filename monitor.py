@@ -155,7 +155,7 @@ def run_monitor():
         
         # Hämta NYT
         print(f"Hämtar {NYT_URL}...")
-        ppage.goto(NYT_URL, wait_until="domcontentloaded", timeout=90000)
+        page.goto(NYT_URL, wait_until="domcontentloaded", timeout=90000)
         
         # Vänta lite extra för dynamiskt innehåll
         page.wait_for_timeout(5000)
