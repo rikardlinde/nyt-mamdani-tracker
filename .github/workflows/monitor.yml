@@ -29,9 +29,12 @@ jobs:
       
       - name: Run monitor
         run: python monitor.py
-      
+        
       - name: Generate report
-        run: python report.py
+        run: python export_csv.py
+
+      - name: Export CSV
+        run: python export_csv.py
       
       - name: Commit and push changes
         run: |
