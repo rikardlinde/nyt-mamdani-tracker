@@ -155,5 +155,20 @@
     "mentions_count": 0,
     "mentions": [],
     "screenshot": null
+  },
+  {
+    "timestamp": "2026-01-21T16:21:40.945513+00:00",
+    "url": "https://www.nytimes.com/",
+    "mentions_count": 1,
+    "mentions": [
+      {
+        "text": "Zohran Mamdani’s Aspiration for Gracie Mansion: Bidets",
+        "headline": "Zohran Mamdani’s Aspiration for Gracie Mansion: Bidets",
+        "href": "https://www.nytimes.com/2026/01/21/style/gracie-mansion-mamdani-bidet.html",
+        "section": "programming-node",
+        "context": "Zohran Mamdani’s Aspiration for Gracie Mansion: Bidets"
+      }
+    ],
+    "screenshot": "nyt_20260121_162140.png"
   }
 ]
