@@ -286,5 +286,12 @@
       }
     ],
     "screenshot": "nyt_20260122_081530.png"
+  },
+  {
+    "timestamp": "2026-01-22T12:21:30.114802+00:00",
+    "url": "https://www.nytimes.com/",
+    "mentions_count": 0,
+    "mentions": [],
+    "screenshot": null
   }
 ]
