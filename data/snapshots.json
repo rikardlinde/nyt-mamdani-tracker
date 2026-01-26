@@ -735,5 +735,12 @@
       }
     ],
     "screenshot": "nyt_20260126_122114.png"
+  },
+  {
+    "timestamp": "2026-01-26T16:18:29.945477+00:00",
+    "url": "https://www.nytimes.com/",
+    "mentions_count": 0,
+    "mentions": [],
+    "screenshot": null
   }
 ]
