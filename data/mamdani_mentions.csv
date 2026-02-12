@@ -280,3 +280,8 @@ Tidpunkt (UTC),Datum,Tid,Antal omnämnanden,Rubrik,Sektion,Länk,Screenshot
 2026-02-11T12:37:32.772010+00:00,2026-02-11,12:37,1,Mamdani Hires Groundbreaking Computer Scientist as Chief Tech Officer,programming-node,https://www.nytimes.com/2026/02/10/nyregion/mamdani-lisa-gelobter-gif.html,nyt_20260211_123732.png
 2026-02-11T16:50:15.461694+00:00,2026-02-11,16:50,1,Mamdani Hires Groundbreaking Computer Scientist as Chief Tech Officer,programming-node,https://www.nytimes.com/2026/02/10/nyregion/mamdani-lisa-gelobter-gif.html,nyt_20260211_165015.png
 2026-02-11T20:27:13.646608+00:00,2026-02-11,20:27,0,,,,
+2026-02-12T01:00:31.808563+00:00,2026-02-12,01:00,5,"{""@context"":""https://schema.org"",""@type"":""WebSite"",""image"":[{""@context"":""https://schema.org"",""@type""",unknown,,nyt_20260212_010031.png
+2026-02-12T01:00:31.808563+00:00,2026-02-12,01:00,5,"Mamdani Finds Allies, and Skeptics, in Albany as He Asks for Funding",programming-node,https://www.nytimes.com/2026/02/11/nyregion/mamdani-budget-tin-cup-albany.html,nyt_20260212_010031.png
+2026-02-12T01:00:31.808563+00:00,2026-02-12,01:00,5,Mayor Zohran Mamdani of New York City visited the State Capitol to press lawmakers for their coopera,programming-node,,nyt_20260212_010031.png
+2026-02-12T01:00:31.808563+00:00,2026-02-12,01:00,5,Mamdani Wants to Test Free Bus Service During World Cup,programming-node,https://www.nytimes.com/2026/02/11/nyregion/nyc-free-buses-world-cup-mamdani.html,nyt_20260212_010031.png
+2026-02-12T01:00:31.808563+00:00,2026-02-12,01:00,5,"window.__preloadedData = {""initialData"":{""data"":{""fdrPackage"":{""__typename"":""ProgrammingNode"",""asset",unknown,,nyt_20260212_010031.png
