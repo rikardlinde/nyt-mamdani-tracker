@@ -44,6 +44,10 @@ def find_mamdani_mentions(html: str, base_url: str) -> list:
     soup = BeautifulSoup(html, "html.parser")
     mentions = []
     
+    # Ta bort script och style-taggar (innehåller metadata, inte synligt innehåll)
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    
     # Hitta alla länkar och element som innehåller "Mamdani"
     for element in soup.find_all(string=re.compile(SEARCH_TERM, re.IGNORECASE)):
         # Hitta närmaste länk-förälder
