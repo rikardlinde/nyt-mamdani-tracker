@@ -20526,5 +20526,20 @@
     "mentions_count": 0,
     "mentions": [],
     "screenshot": null
+  },
+  {
+    "timestamp": "2026-11-14T00:30:41.785114+00:00",
+    "url": "https://www.nytimes.com/",
+    "mentions_count": 1,
+    "mentions": [
+      {
+        "text": "Mamdani Makes Deal With Trump to Delay SNAP Rules for Stores Across U.S.",
+        "headline": "Mamdani Makes Deal With Trump to Delay SNAP Rules for Stores Across U.S.",
+        "href": "https://www.nytimes.com/2026/11/13/nyregion/mamdani-trump-snap-rule-delay.html",
+        "section": "programming-node",
+        "context": "Mamdani Makes Deal With Trump to Delay SNAP Rules for Stores Across U.S."
+      }
+    ],
+    "screenshot": "nyt_20261114_003041.png"
   }
 ]
